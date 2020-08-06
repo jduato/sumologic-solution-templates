@@ -191,7 +191,7 @@ Resources:
         Statement:
           - Effect: Allow
             Principal:
-              AWS: arn:aws:iam::926226587429:root
+              AWS: arn:aws:iam::246946804217:root
             Action: sts:AssumeRole
             Condition:
               StringEquals:
@@ -222,7 +222,7 @@ Resources:
         Statement:
           - Effect: Allow
             Principal:
-              AWS: arn:aws:iam::926226587429:root
+              AWS: arn:aws:iam::246946804217:root
             Action: sts:AssumeRole
             Condition:
               StringEquals:
