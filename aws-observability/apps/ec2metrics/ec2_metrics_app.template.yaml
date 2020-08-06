@@ -219,7 +219,7 @@ Resources:
         - ""
         - - "https://"
           - !FindInMap [RegionMap, !Ref 'AWS::Region', bucketname]
-          - ".s3.amazonaws.com/sumologic-aws-observability/apps/common/resources.template.yaml"
+          - ".s3.amazonaws.com/sumologic-aws-observability-pre-prod/apps/common/resources.template.yaml"
       Parameters:
         SumoLogicDeployment: !Ref Section1aSumoDeployment
         SumoLogicAccessID: !Ref Section1bSumoAccessID

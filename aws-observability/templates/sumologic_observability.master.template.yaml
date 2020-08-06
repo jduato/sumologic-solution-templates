@@ -387,7 +387,7 @@ Resources:
         - ""
         - - "https://"
           - !FindInMap [RegionMap, !Ref 'AWS::Region', bucketname]
-          - ".s3.amazonaws.com/sumologic-aws-observability/apps/common/resources.template.yaml"
+          - ".s3.amazonaws.com/sumologic-aws-observability-pre-prod/apps/common/resources.template.yaml"
       Parameters:
         SumoLogicDeployment: !Ref Section1aSumoLogicDeployment
         SumoLogicAccessID: !Ref Section1bSumoLogicAccessID
@@ -436,7 +436,7 @@ Resources:
         - ""
         - - "https://"
           - !FindInMap [RegionMap, !Ref 'AWS::Region', bucketname]
-          - ".s3.amazonaws.com/sumologic-aws-observability/apps/autoenable/auto_enable.template.yaml"
+          - ".s3.amazonaws.com/sumologic-aws-observability-pre-prod/apps/autoenable/auto_enable.template.yaml"
       Parameters:
         SumoLogicResourceRemoveOnDeleteStack: !Ref Section1eSumoLogicResourceRemoveOnDeleteStack
         ALBAutoEnableS3Logs: !If [auto_enable_s3_logs, "Yes", "No"]
@@ -454,7 +454,7 @@ Resources:
         - ""
         - - "https://"
           - !FindInMap [RegionMap, !Ref 'AWS::Region', bucketname]
-          - ".s3.amazonaws.com/sumologic-aws-observability/apps/ec2metrics/ec2_metrics_app.template.yaml"
+          - ".s3.amazonaws.com/sumologic-aws-observability-pre-prod/apps/ec2metrics/ec2_metrics_app.template.yaml"
       Parameters:
         Section1aSumoDeployment: !Ref Section1aSumoLogicDeployment
         Section1bSumoAccessID: !Ref Section1bSumoLogicAccessID
@@ -486,7 +486,7 @@ Resources:
         - ""
         - - "https://"
           - !FindInMap [RegionMap, !Ref 'AWS::Region', bucketname]
-          - ".s3.amazonaws.com/sumologic-aws-observability/apps/alb/alb_app.template.yaml"
+          - ".s3.amazonaws.com/sumologic-aws-observability-pre-prod/apps/alb/alb_app.template.yaml"
       Parameters:
         Section1aSumoDeployment: !Ref Section1aSumoLogicDeployment
         Section1bSumoAccessID: !Ref Section1bSumoLogicAccessID
@@ -522,7 +522,7 @@ Resources:
         - ""
         - - "https://"
           - !FindInMap [RegionMap, !Ref 'AWS::Region', bucketname]
-          - ".s3.amazonaws.com/sumologic-aws-observability/apps/dynamodb/dynamodb_app.template.yaml"
+          - ".s3.amazonaws.com/sumologic-aws-observability-pre-prod/apps/dynamodb/dynamodb_app.template.yaml"
       Parameters:
         Section1aSumoDeployment: !Ref Section1aSumoLogicDeployment
         Section1bSumoAccessID: !Ref Section1bSumoLogicAccessID
@@ -556,7 +556,7 @@ Resources:
         - ""
         - - "https://"
           - !FindInMap [RegionMap, !Ref 'AWS::Region', bucketname]
-          - ".s3.amazonaws.com/sumologic-aws-observability/apps/rds/rds_app.template.yaml"
+          - ".s3.amazonaws.com/sumologic-aws-observability-pre-prod/apps/rds/rds_app.template.yaml"
       Parameters:
         Section1aSumoDeployment: !Ref Section1aSumoLogicDeployment
         Section1bSumoAccessID: !Ref Section1bSumoLogicAccessID
@@ -590,7 +590,7 @@ Resources:
         - ""
         - - "https://"
           - !FindInMap [RegionMap, !Ref 'AWS::Region', bucketname]
-          - ".s3.amazonaws.com/sumologic-aws-observability/apps/apigateway/api_gateway_app.template.yaml"
+          - ".s3.amazonaws.com/sumologic-aws-observability-pre-prod/apps/apigateway/api_gateway_app.template.yaml"
       Parameters:
         Section1aSumoDeployment: !Ref Section1aSumoLogicDeployment
         Section1bSumoAccessID: !Ref Section1bSumoLogicAccessID
@@ -624,7 +624,7 @@ Resources:
         - ""
         - - "https://"
           - !FindInMap [RegionMap, !Ref 'AWS::Region', bucketname]
-          - ".s3.amazonaws.com/sumologic-aws-observability/apps/rootcause/rootcauseexplorer.template.yaml"
+          - ".s3.amazonaws.com/sumologic-aws-observability-pre-prod/apps/rootcause/rootcauseexplorer.template.yaml"
       Parameters:
         Section1aSumoDeployment: !Ref Section1aSumoLogicDeployment
         Section1bSumoAccessID: !Ref Section1bSumoLogicAccessID
@@ -659,7 +659,7 @@ Resources:
         - ""
         - - "https://"
           - !FindInMap [RegionMap, !Ref 'AWS::Region', bucketname]
-          - ".s3.amazonaws.com/sumologic-aws-observability/apps/lambda/lambda_app.template.yaml"
+          - ".s3.amazonaws.com/sumologic-aws-observability-pre-prod/apps/lambda/lambda_app.template.yaml"
       Parameters:
         Section1aSumoDeployment: !Ref Section1aSumoLogicDeployment
         Section1bSumoAccessID: !Ref Section1bSumoLogicAccessID
