@@ -37,15 +37,9 @@ Parameters:
   Section1aSumoDeployment:
     Type: String
     AllowedValues:
-      - au
-      - ca
-      - de
-      - eu
-      - jp
-      - us2
-      - us1
-      - in
-      - fed
+      - nite
+      - stag
+      - long
     Description: "Enter au, ca, de, eu, jp, us2, in, fed or us1. Visit https://help.sumologic.com/APIs/General-API-Information/Sumo-Logic-Endpoints-and-Firewall-Security"
   Section1bSumoAccessID:
     Type: String

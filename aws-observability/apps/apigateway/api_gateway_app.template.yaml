@@ -100,15 +100,9 @@ Parameters:
   Section1aSumoDeployment:
     Type: String
     AllowedValues:
-      - au
-      - ca
-      - de
-      - eu
-      - jp
-      - us2
-      - us1
-      - in
-      - fed
+      - nite
+      - stag
+      - long
     Description: "Enter au, ca, de, eu, jp, us2, in, fed or us1."
   Section1bSumoAccessID:
     Type: String
